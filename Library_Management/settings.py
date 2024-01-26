@@ -16,7 +16,8 @@ SECRET_KEY = 'django-insecure-fsb91_wr1_(%nec-i5icy(!ygj&yjd&(r39tl@m^=3+)u@l$50
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"] 
+CSRF_TRUSTED_ORIGINS = ['https://library-management-xqa3.onrender.com','https://*.127.0.0.1']
 
 
 # Application definition
