@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" class="max-w-md mx-auto p-6 bg-gray-800 text-white rounded-md shadow-md mt-5">
+    {% csrf_token %}
+
+    <div class="mb-4">
+        <label for="id_content" class="block text-md font-medium text-white-800">Review Content</label>
+        {{ form.content }}
+    </div>
+
+
+
+    <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-300">Rating</label>
+        {{ form.rating }}
+    </div>
+
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit Review</button>
+</form>
+{% endblock %}
